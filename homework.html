@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>tit</title>
+		<script type="text/javascript">//209001023罗云杉
+			for(var i=1;i<=5;i++)//正三角
+			{
+				for(var j=0;j<=5-i;j++)
+				{
+					document.write("&nbsp&nbsp");//打出间隔
+				}
+				for(var j=1;j<=i;j++)
+				{
+					document.write("*&nbsp&nbsp&nbsp");//增加空格整理图形
+				}
+				document.write("<br>");//每次打完一行第一循环后换行
+			}
+			
+			
+			for(var i=1;i<=5;i++)//平行四边形
+			{
+				for(var j=1;j<=5-i;j++)
+				{
+					document.write("&nbsp&nbsp&nbsp");//打出间隔
+				}
+				for(var k=0;k<=5;k++)
+				{
+					document.write("*&nbsp&nbsp");
+				}
+				document.write("<br>");//换行
+			}
+			
+			
+			for(var i=1;i<=5;i=i+2)//菱形
+			{
+				for(var j=0;j<=5-i;j++)
+				{
+					document.write("&nbsp&nbsp");//打出间隔
+				}
+				for(var j=1;j<=i;j++)
+				{
+					document.write("*&nbsp&nbsp&nbsp");
+				}
+				document.write("<br>");
+			}//先打出上正三角
+			for(var i=3;i>0;i=i-2)
+			{
+				for(var j=0;j<=5-i;j++)
+				{
+					document.write("&nbsp&nbsp");//打出间隔
+				}
+				for(var j=1;j<=i;j++)
+				{
+					document.write("*&nbsp&nbsp&nbsp");
+				}
+				document.write("<br>");
+			}//再打出倒三角
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
